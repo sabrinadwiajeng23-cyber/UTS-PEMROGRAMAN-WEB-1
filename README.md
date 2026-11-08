@@ -18,7 +18,6 @@ HALAMAN
 STRUKTUR
 tugas-uts-web1/
 |-- index.html
-|-- login.html
 |-- dashboard.html
 |-- stok.html
 |-- tracking.html
