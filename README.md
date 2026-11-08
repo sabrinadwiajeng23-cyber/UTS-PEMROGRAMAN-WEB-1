@@ -5,8 +5,8 @@ CARA MENJALANKAN
 2. Buka folder menggunakan Visual Studio Code.
 3. Jalankan index.html menggunakan browser atau ekstensi Live Server.
 4. Login menggunakan akun demo:
-   Email    : admin@booknest.com
-   Password : 123456
+   Email    : adminmoderator1booknest@gmail.com
+   Password : 020304
 
 HALAMAN
 - index.html       : halaman login (login.html diarahkan ke sini)
