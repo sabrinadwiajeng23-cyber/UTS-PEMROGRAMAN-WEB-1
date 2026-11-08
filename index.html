@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BookNest - toko buku online sederhana">
+  <title>Login | BookNest</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-visual">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark">B</span> BookNest</a>
+      <div class="visual-copy">
+        <span class="eyebrow">TEMUKAN CERITA BARU</span>
+        <h1>Satu buku bisa membuka banyak dunia.</h1>
+        <p>Temukan bacaan favoritmu dan pesan dengan mudah di BookNest.</p>
+      </div>
+      <div class="visual-books" aria-hidden="true">
+        <div class="book book-one"><span>THE ART<br>OF SLOW<br>LIVING</span></div>
+        <div class="book book-two"><span>GROW<br>THROUGH<br>IT</span></div>
+        <div class="book book-three"><span>IDEAS<br>THAT<br>MATTER</span></div>
+      </div>
+      <p class="visual-note">Baca. Jelajahi. Bertumbuh.</p>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="mobile-brand brand"><span class="brand-mark">B</span> BookNest</div>
+        <span class="eyebrow">SELAMAT DATANG KEMBALI</span>
+        <h2>Masuk ke akunmu</h2>
+        <p class="muted">Masukkan email dan password untuk melanjutkan.</p>
+        <form id="loginForm" novalidate>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="nama@email.com" autocomplete="username" required>
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input id="password" name="password" type="password" placeholder="Masukkan password" autocomplete="current-password" required>
+            <button class="show-password" type="button" id="togglePassword" aria-label="Tampilkan password">Lihat</button>
+          </div>
+          <button class="btn btn-primary btn-full" type="submit">Login <span>→</span></button>
+        </form>
+        <div class="auth-links">
+          <button type="button" class="text-button" data-modal="forgotModal">Lupa Password?</button>
+          <span>Belum punya akun? <button type="button" class="text-button" data-modal="registerModal">Daftar</button></span>
+        </div>
+        <div class="demo-hint"><strong>Akun demo:</strong> admin@booknest.com <span>·</span> <strong>Password:</strong> 123456</div>
+      </div>
+      <p class="auth-footer">© 2026 BookNest. Dibuat untuk tugas UTS Pemrograman Web 1.</p>
+    </section>
+  </main>
+
+  <div class="modal" id="forgotModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="forgotTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Tutup">×</button>
+      <span class="eyebrow">BANTUAN AKUN</span><h3 id="forgotTitle">Lupa password?</h3>
+      <p class="muted">Masukkan email akunmu. Instruksi reset akan ditampilkan sebagai simulasi.</p>
+      <form id="forgotForm"><label for="forgotEmail">Email</label><input id="forgotEmail" type="email" placeholder="nama@email.com" required><button class="btn btn-primary btn-full" type="submit">Kirim instruksi</button></form>
+    </section>
+  </div>
+  <div class="modal" id="registerModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Tutup">×</button>
+      <span class="eyebrow">GABUNG BOOKNEST</span><h3 id="registerTitle">Buat akun baru</h3>
+      <p class="muted">Form pendaftaran ini merupakan simulasi front-end.</p>
+      <form id="registerForm"><label for="registerName">Nama lengkap</label><input id="registerName" required placeholder="Nama kamu"><label for="registerEmail">Email</label><input id="registerEmail" type="email" required placeholder="nama@email.com"><label for="registerPassword">Password</label><input id="registerPassword" type="password" minlength="6" required placeholder="Minimal 6 karakter"><button class="btn btn-primary btn-full" type="submit">Daftar sekarang</button></form>
+    </section>
+  </div>
+</body>
+</html>
